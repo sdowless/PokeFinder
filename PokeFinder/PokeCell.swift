@@ -10,15 +10,13 @@ import UIKit
 
 class PokeCell: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var pokeLbl: UILabel!
+    @IBOutlet weak var pokeImg: UIImageView!
+
+
+    func configureCell(poke: Pokemon) {
+        pokeLbl.text = poke.name.capitalized
+        pokeImg.image = UIImage(named: "\(poke.pokeID)")
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
+    
 }
