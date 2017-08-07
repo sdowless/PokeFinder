@@ -6,4 +6,12 @@
 //  Copyright © 2017 Stephan Dowless. All rights reserved.
 //
 
-import Foundation
+class Pokemon {
+    var name: String!
+    var pokeID: Int
+    
+    init(name: String, pokeID: Int) {
+        self.name = name
+        self.pokeID = pokeID
+    }
+}
