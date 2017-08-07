@@ -6,4 +6,12 @@
 //  Copyright © 2017 Stephan Dowless. All rights reserved.
 //
 
-import Foundation
+class SendPokemon {
+    var location: CLLocation!
+    var pokemonID: Int!
+    
+    init(location: CLLocation, pokemonID: Int) {
+        self.location = location
+        self.pokemonID = pokemonID + 1
+    }
+}
